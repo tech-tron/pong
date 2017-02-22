@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <style>
-  <style>
+    <style>
+
+    </style>
 </head>
 
 <body>
+    <canvas id="pong" width="600" height="400"> </canvas>
+
+    <script>
+        var canvas = document.getElementById('pong');
+        var context = canvas.getContext('2d');
+
+        context.fillStyle = '#000';
+        context.fillRect(0, 0, canvas.width, canvas.height)
+
+        //want to commit before i go any further
+        //context.fillStyle = '#fff';
+        //context.fillRect(0, 0, 10, 10)
+    </script>
 </body>
+
 </html>
