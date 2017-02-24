@@ -37,7 +37,7 @@
           };
           get top()
           {
-            return this.pos.y - this.size.x / 2;
+            return this.pos.y - this.size.y / 2;
           };
           get bottom()
           {
@@ -113,7 +113,7 @@
           drawRect(rect)
           {
             this._context.fillStyle = '#fff';
-            this._context.fillRect(rect.pos.x, rect.pos.y, rect.size.x, rect.size.y);
+            this._context.fillRect(rect.left, rect.top, rect.size.x, rect.size.y);
           };
 
           update(dt) {
